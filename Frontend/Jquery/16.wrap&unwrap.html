@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+   
+</head>
+<body>
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        float: left;
+        background-color: red;
+        border:2px solid black;
+    }
+    .box1{
+        /* width: 200px;
+        height: 200px; */
+        padding: 20px;
+        float: left;
+        background-color: yellow;
+        border:2px solid black;
+    }
+</style>
+
+    <div class="box"></div>
+
+    <button id="wrap1">wrap</button>
+    <button id="unwrap1">unwrap</button>
+<script>
+    $(document).ready(function(){
+        $('#wrap1').click(function(){
+            $('.box').wrap("<div class='box1'></div>");
+        });      
+        $('#unwrap1').click(function(){
+            $('.box').unwrap();
+        });     
+    })
+</script>
+
+</body>
+</html>

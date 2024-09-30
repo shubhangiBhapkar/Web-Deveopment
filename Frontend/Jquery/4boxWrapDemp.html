@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script src="cdn/jquery-3.7.1.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+<style>
+    .container{
+        display: flex;
+    }
+    
+    .box{
+       border: 2px solid black;
+        background-color: yellow;
+    }
+    .box1{
+        width: 200px;
+        height: 200pX;
+        background-color: red;
+        margin:10px ;
+    }
+    .box2{
+        width: 200px;
+        height: 200pX;
+        background-color: green;
+        margin: 10px ;
+    }
+    .box3{
+        width: 200px;
+        height: 200pX;
+        margin: 10px ;
+        background-color: pink;
+        
+      
+    }
+    .box4{
+        width: 200px;
+        height: 200pX;
+        background-color: purple;
+        margin:10px;   
+    }
+</style>
+<div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</div>
+
+<button id="btn1">wrap</button>
+<button id="btn2">unwrap</button>
+<script>
+
+$(document).ready(function(){
+     $('#btn1').click(function(){
+        $('.container div').wrap("<div class='box'></div>");
+     });
+
+     $('#btn2').click(function(){
+        $('.container div').wrap("<div class='box'></div>");
+     });
+     })
+ 
+</script>
+</body>
+</html>

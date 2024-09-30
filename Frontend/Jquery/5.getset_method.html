@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>get set object</title>
+</head>
+<body>    
+    <div id="box">
+        <p>name:shubhangi</p>
+        <p>mob:7620297799</p> 
+        <p id="p3"></p>   
+    </div>
+    <input type="button" id="btn1" value="html"/>
+    <input type="button" id="btn2" value="text"/>
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+    <script>
+        
+        $(document).ready(function(){
+
+            //get set with .html()
+            $('#btn1').click(function(){
+                var a=$('#box').html();
+                console.log(a);
+               // $('#p3').html('college:AVCOE');
+               $('#box p:last').text('shubhangi');
+            });  
+            
+            // .text()
+            
+            $('#btn2').click(function(){
+                var b=$('#box').text();
+                console.log(b);
+                $('#p3').text('city:a.nagar');
+            });
+        });
+</script>
+
+<div class="box box2" id="demo"></div>
+<script>
+$(document).ready(function(){
+    var a=$('#demo').attr('class');
+    console.log(a);
+
+    var b=$('#demo').attr('id');
+    console.log(b);
+
+    $('#demo').attr('class','se');
+});
+       
+ </script>
+</body>
+</html>

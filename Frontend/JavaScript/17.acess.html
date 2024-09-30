@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML,innerText</title>
+</head>
+
+<body>
+    <!-- <h1 id="data"><mark>Welcome</mark></h1>
+    <h1 id="data1">hiii</h1>
+
+    <h2 id="Html"><mark>Hii I am shubh</mark></h2>
+    <script>
+        var a = document.getElementById('data').innerText;
+        console.log(a);
+        var b=document.getElementById('data1').innerText;
+        console.log(b);
+
+        document.getElementById('data1').innerText="<mark>shubhangi</mark>";
+
+        var c=document.getElementById('Html').innerHTML;
+        console.log(c);
+        document.getElementById('data1').innerHTML="<mark>hiii</mark>";
+    </script> -->
+    <style>
+         .box{
+                height:200px;
+                 width:200px;
+                 background-color: red;
+            }
+        .box1{
+                height:200px;
+                width:200px;
+                background-color: blueviolet;
+        }
+        
+       
+
+    </style>
+ 
+    <div id="data" class="box"></div>
+    <script>
+       var a= document.getElementById('data').getAttribute('id');
+       console.log(a);
+       document.getElementById('data').setAttribute('class', "box1");
+   </script>
+   
+</body>
+
+</html>

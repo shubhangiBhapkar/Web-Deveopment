@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data={
+            "name":"shubhangi",
+            "age":"20",
+            "address":"nagar",
+            "email":"shubhangi@123"
+        }
+        document.write(data.name+"<br>");
+        for(var key in data){
+           // document.write(key+":");
+            document.write(key+":"+data[key]+"<br>");
+        }
+
+        //nested object
+
+        var data2={
+            "name":"shubhangi",
+            "age":"20",
+            "address":"nagar",
+            "email":"shubhangi@123",
+            "subject":{
+                "sub1":"HTML",
+                "sub2":"JS",
+                "sub3":"java",
+            
+            },
+             "address2":"nagar",
+            "email":"shubhangi@123"
+        }
+        for(var key in data2.subject){
+            document.write(key+":"+data2.subject[key]+"<br>");
+        }
+    </script>
+</body>
+</html>

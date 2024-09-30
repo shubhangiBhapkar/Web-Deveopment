@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KeyBoard</title>
+</head>
+<body id="body" onkeypress="key_press()" onkeydown="key_down()" onkeyup="key_up()" >
+    
+    <script>
+        function key_press(){
+            document.getElementById("body").style.background="red";
+        }
+        function key_down(){
+            document.getElementById("body").style.background="pink";
+        }
+        function key_up(){
+            document.getElementById("body").style.background="black";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.red{
+	background: yellowgreen;
+	color: pink;
+	font-size: 30px;
+}
+.green{
+	background: purple;
+	font-size: 30px;
+	color: goldenrod;
+}
+*{
+	margin: 0;
+	padding: 0;
+}

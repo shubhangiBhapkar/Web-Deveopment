@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script src="cdn/jquery-3.7.1.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+    <script src="https://ajax.googleeapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+    <div class="box"></div>
+    <button id="fadein">fadein</button>
+    <button id="fadeout">fadeout</button>
+    <button id="toggle1">toggle</button>
+    <script>
+        $(document).ready(function(){
+            $('#fadein').click(function(){
+                $('.box').fadeIn();
+            })
+            $('#fadeout').click(function(){
+                $('.box').fadeOut();
+            })
+            $('#toggle1').click(function(){
+                $('.box').fadeToggle();
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A B C D...</title>
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+    <button id="btn1" value="A">A</button>
+    <button id="btn2" value="B">B</button>
+    <button id="btn3" value="C">C</button>
+    <button id="btn4" value="D">D</button>
+    <button id="btn5" value="E">E</button>
+    <button id="btn6" value="F">F</button>
+    <button id="btn7" value="G">G</button>
+    <button id="btn8" value="H">H</button>
+    <button id="btn9" value="I">I</button>
+    <button id="btn10" value="J">J</button>
+    
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+
+<script>
+$(document).ready(function(){
+    $('btn1').click(function(){
+        $('#div1').append($('#btn1'.val()));
+    })
+    for(var i=0;i<=9;i++)
+    {
+
+    }
+   
+})
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>event</title>
+</head>
+<body id="body">
+    
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('#body').keydown(function(){
+            $(this).css('background','gray');
+        });
+
+        $('#body').keyup(function(){
+            $(this).css('background','green');
+        });
+
+        $('#body').keypress(function(){
+            $(this).css('background','red');
+        });
+    });
+
+    </script>
+    
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: purple;
+        }
+        
+    </style>
+    <div class="box"></div>
+    <script>
+        $(document).ready(function(){
+            $('.box').click(function(){
+              // alert('click');
+                $(this).css('background','red');
+            });
+
+            $('.box').dblclick(function(){
+                $(this).css('background','yellow');
+            });
+
+            $('.box').contextmenu(function(){
+                $(this).css('background','blue');
+            });
+
+            $('.box').mouseover(function(){
+                $(this).css('background','green');
+            });
+
+            $('.box').mouseout(function(){
+                $(this).css('background','pink');
+            });
+        });
+
+        
+    </script>
+</body>
+</html>

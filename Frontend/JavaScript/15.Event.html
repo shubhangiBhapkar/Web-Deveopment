@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Event</title>
+    <style>
+        .box {
+            width: 50%;
+            height: 300px;
+            /* position: relative; */
+            background-color: red;
+
+        }
+        #box1 {
+            width: 50%;
+            height: 300px;
+            background-color: purple;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--1. mouse event
+        i>  onclick
+        ii> ondblclick
+        iii> contextmenu
+     -->
+
+
+    <div class="box" id="box" onclick="change()" ondblclick="dblclick()" contextmenu="contextmenu()"></div>
+
+    <div id="box1" onmouseover="over()" onmouseout="out()" onmouseenter="enter()"
+    onmouseleave="leave()">
+    Showing the effect of event</div>
+
+    <script>
+        function change() {
+            document.getElementById("box").style.background = "yellow";
+
+        }
+        function dblclick() {
+            document.getElementById("box").style.float = "left";
+        }
+
+        function contextmenu() {
+            document.getElementById("box").style.background = "red";
+        }
+    </script>
+    <script>
+        function over(){
+            document.getElementById("box1").style.fontSize="50px";
+        }
+        function out(){
+            document.getElementById("box1").style.fontSize="20px"; 
+        }
+        // function enter(){
+        //     document.getElementById("box1").style.color="green"; 
+        // }
+        // function leave(){
+        //     document.getElementById("box1").style.fontFamily="arial"; 
+        // }
+    </script>
+</body>
+
+</html>

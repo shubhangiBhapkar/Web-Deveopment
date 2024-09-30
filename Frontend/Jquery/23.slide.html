@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Slide Animation</title>
+</head>
+<body>
+    <script src="cdn/jquery-3.7.1.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+
+    <!-- new cdn's for thid prg -->
+    <script src="https://ajax.googleeapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+   <div class="box"></div> 
+   <button id="slideup">slideup</button>
+   <button id="slidedown">slidedown</button>
+   <button id="toggle">Toggle</button>
+   <script>
+        $(document).ready(function(){
+            $('#slideup').click(function(){
+                $('.box').slideUp(3000);
+            })
+
+            $('#slidedown').click(function(){
+                $('.box').slideDown();
+            })
+
+            $('#toggle').click(function(){
+                $('.box').slideToggle();
+            })
+        })
+   </script>
+</body>
+</html>

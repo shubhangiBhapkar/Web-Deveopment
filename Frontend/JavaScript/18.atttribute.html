@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background: blue;
+        }
+    </style>
+    <!-- <div id="div1" class="div"></div> -->
+    
+
+    <div id="id2" class="box"></div>
+    <button  onclick="cadd()">add</button>
+    <button  onclick="cremove()">remove</button>
+    <button  onclick="ctoggle()">toggle</button>
+    <br><br>
+
+    <input type="text" id="in1" class="inp" value="shubhangi" disabled><br><br>
+    <input type="text" id="in2" class="inp" value="shubhangi35@gmail.com" disabled>
+    <br><br><br><br>
+    <input type="text" id="in3" class="inp"  ><br><br>
+    <input type="text" id="in4" class="inp"  >
+    <script>
+        var x=document.getElementsByClassName('inp')[0].value;
+        var y=document.getElementsByClassName('inp')[1].value;
+        console.log(x);
+        console.log(y);
+
+        document.getElementsByClassName('inp')[2].value='shubhangi';
+        document.getElementsByClassName('inp')[3].value="shubhamgi@gamil.com";
+
+        var a = document.getElementsByClassName('inp')[0].hasAttribute('disabled');
+        console.log(a);
+
+        //*** add remove toggle = methodsof class list
+
+        function cadd(){
+            document.getElementById('id2').classList.add('box1');
+        }
+        function cremove(){
+            document.getElementById('id2').classList.remove('box');
+        }
+       function ctoggle(){
+        document.getElementById('id2').classList.toggle('box1');
+
+       }
+       
+    </script>
+</body>
+
+</html>

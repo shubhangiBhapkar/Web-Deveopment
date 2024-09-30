@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body style= " height: 1000px;width:5000px;background-image:radial-gradient(pink,purple,red)">
+    <script src="cdn/jquery-3.7.1.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .btn{
+            background-color: yellow;
+            color: green;
+            position: fixed;
+            bottom:5px;
+            left:5px;
+            
+        }
+        .btn1{
+            position: fixed;
+            background-color: yellow;
+            bottom: 5px; 
+             left: 50px;       }
+        
+        p{
+          
+            color: red;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+  <div class="box">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet ipsum voluptates incidunt, recusandae quibusdam consequuntur minus rem quos inventore, veritatis beatae magnam velit sunt reiciendis unde, mollitia officia laboriosam facilis.</p>
+    <button class="btn" id="top">.  Top   .</button>
+    <button class="btn1" id="left">.  Left   .</button>
+ </div>
+    <script>
+        $(document).ready(function(){
+            $('#top').click(function(){
+                    $(window).scrollTop(0);
+            })
+            $('#left').click(function(){
+                    $(window).scrollLeft(0);
+            })
+
+        })
+    </script>
+</body>
+</html>

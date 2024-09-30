@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         .box{
+            width: 150px;
+            height: 150px;
+            
+            background-color:purple;
+         }
+     </style>
+    <div class="box"></div><br>
+    <button onclick="start1()">start</button>
+    <button onclick="stop1()">stop</button>
+    <button onclick="return1()">return</button>
+    
+   <script>
+       var id='';
+       a=0;
+        function start1(){
+           id= setInterval(demo,1000);
+        }
+        function stop1(){
+            clearInterval(id);
+        }
+        function demo(){
+            a+=50;
+            document.getElementsByClassName('box')[0].style.marginLeft=a+"px";
+
+        }
+        //var b=1000;
+        function return1(){
+            setInterval(demo1,1000);
+
+        }
+        function demo1(){
+            clearInterval(id);
+            a-=50;
+            document.getElementsByClassName("box")[0].style.marginLeft=a+"px";
+        }
+    </script>   
+</body>
+</html>

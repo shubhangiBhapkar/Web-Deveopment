@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Append Prepend</title>
+</head>
+<body>
+    <input type="text" id="name"/>
+    <button id="btn">Save</button>
+    <h1>Saved users</h1>
+    <ul id="data">
+    
+    </ul>
+    
+    <!-- <ul id="data">
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepend</button> -->
+
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+
+<!-- <script>
+    $(document).ready(function(){
+        $('#btn1').click(function(){
+            $('#data').append("<li>Append</li>");
+        })
+        $('#btn2').click(function(){
+            $('#data').prepend("<li>Prepend</li>");
+        })
+     })
+</script> -->
+
+<script>
+$(document).ready(function(){
+    $('#btn').click(function(){
+       var a= $('#name').val();
+       $('#data').append(a);
+    })
+    
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WrapAll and inner</title>
+</head>
+
+<body>
+    <script src="cdn/jquery-3.7.1.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+
+    <style>
+        .box {
+            height: 100px;
+            width: 100%;
+            padding: 20px;
+            background-color: purple;
+        }
+
+        .data {
+
+            margin: 20px;
+            background-color: yellow;
+        }
+    </style>
+
+    <div class="box">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JAVASCRIPT</p>
+    </div>
+    <button id="wrap1">wrap</button>
+    <button id="wrapinner">wrap inner</button>
+    <script>
+        $(document).ready(function () {
+            $('#wrap1').click(function () {
+                $('.box p').wrapAll("<div class='data'></div>");
+            });
+
+            $('#wrapinner').click(function () {
+                $('.box p:first').wrapInner("<span>Hello</span>");
+            })
+        })
+    </script>
+</body>
+
+</html>

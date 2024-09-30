@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Function</title>
+</head>
+<body>
+    <!-- <button type="button" onclick="helloo()" >Hello</button>
+    
+    <button type="button" onclick="wel()" >wel</button>
+    <script>
+        function helloo(){
+            alert("HELLO");
+        }
+        function wel(){
+            alert("WELCOME");
+
+        } -->
+        
+    <!-- </script> -->
+    
+
+    <!-- *** DISPLAYING NAME -->
+    <!-- <button type="button" onclick="Name('Priya')">Priya</button>
+    <button type="button" onclick="Name('Pranjali')">Pranjali</button>
+    <button type="button" onclick="Name('Shubs')">Shubs</button>
+    <button type="button" onclick="Name('Shubham')">Shubham</button>
+    <script>
+        function Name(name){
+            alert("welcome "+name);
+        }
+    </script> -->
+
+
+<button type="button" onclick="Name('Priya','Mane')">Priya</button>
+<button type="button" onclick="Name('Pranjali','sake')">Pranjali</button>
+<button type="button" onclick="Name('Shubs','kore')">Shubs</button>
+<button type="button" onclick="Name('Shubham','bhapkar')">Shubham</button>
+<script>
+    function Name(fname,lname){
+        alert("welcome "+fname+" " +lname);
+    }
+</script>
+
+<!-- <script>
+    function abc(a,b,c){
+        var c=a+" "+b+" "+c;
+       // document.write(c);
+        document.write(typeof c);
+        return c;
+    }
+ //  var res= abc('1','2','3');
+   document.write(abc('1','2','3'));
+    
+</script> -->
+
+
+<!-- Function in Expression -->
+<!-- <script>
+    var fun=function name(name){
+        var g="welcome "+name;
+        return g;
+    }
+    document.write(fun('shubhangi'));
+
+</script> -->
+
+<!-- Anonymous Function =Function without name-->
+<!-- <script>
+   var fun= function(name){
+        var c="welcome "+name;
+        return c;
+    }
+    document.write(fun('shubham'));
+</script> -->
+
+
+<!-- Arrow function -->
+<script>
+    var nam=(name)=>{
+        document.write("welcome "+name);
+    }
+    nam('shubham');
+</script>
+
+
+</body>
+</html>

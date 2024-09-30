@@ -1,0 +1,68 @@
+*{
+	padding: 0px;
+	margin: 0px;
+
+}
+.loader{
+	width: 100vw;
+	height:0.3vh;
+	background-color:red;
+	animation-name: progress;
+	animation-duration: 1s;
+	animation-direction: normal;
+	animation-iteration-count: 1;
+
+}
+li{
+	display: inline-block;
+	padding-left:3.5vw;
+	padding-top: 2.5vw;
+	font-size: 1.5vw;
+}
+.header{
+	background-color:black;
+	color: white;
+	height:7vw;
+	width:100vw;
+
+}
+.box{
+	
+	width: 100vw;
+	height: 60vh;
+	background-color: salmon;
+	position: absolute;
+	animation-name: move;
+	animation-duration:5s ;
+	animation-iteration-count:1;
+	animation-direction: normal;
+
+}
+h2{
+	color: black;
+	font-size: 5vw;
+	padding:1vw;
+}
+
+@keyframes move{
+	from{
+		width: 0;
+		background-color: lightseagreen;
+	}
+	to{
+		width: 100%;
+		background-color: salmon;
+	}
+}
+
+@keyframes progress{
+	from{
+		width:0;
+	}
+	to{
+		width: 40vw;
+	}
+	to{
+		width:100vw;
+	}
+}

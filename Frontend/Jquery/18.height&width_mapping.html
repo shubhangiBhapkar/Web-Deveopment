@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Height width mapping</title>
+</head>
+
+<body>
+    <script src="cdn/jquery-3.7.1.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+
+    <style>
+        .box{
+            padding: 50px;
+            width: 400px;
+            height: 300px;
+            background-color: red;
+            border: 10px solid black;
+        }
+    </style>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium neque laborum sit quae recusandae
+        consectetur pariatur enim saepe cumque, itaque, temporibus delectus soluta asperiores ipsam ipsum facilis. Ipsa,
+        incidunt nam. Molestias, nobis! Beatae, dolore non!
+    </div>
+<script>
+    $(document).ready(function(){
+      var a=$('.box').width();
+      console.log(a);
+      var a=$('.box').innerWidth();
+      console.log(a);
+      var a=$('.box').outerWidth();
+      console.log(a);
+      var a=$('.box').outerWidth(true);
+      console.log(a);
+      
+
+    })
+</script>
+</body>
+
+</html>

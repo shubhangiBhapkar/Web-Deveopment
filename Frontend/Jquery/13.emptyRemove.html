@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>empty remove</title>
+</head>
+<body>
+    <div id="data">
+        <h1>welcome</h1>
+        <p>Shubhangi</p>
+    </div> 
+    <button id="Empty">Empty</button>   
+    <button id="Remove">Remove</button>   
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#Empty').click(function(){
+                $('#data h1').empty();
+            })
+
+            $('#Remove').click(function(){
+                $('#data h1').remove();
+            })
+            
+        })
+    </script>
+</body>
+</html>

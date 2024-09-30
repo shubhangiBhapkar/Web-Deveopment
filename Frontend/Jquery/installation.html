@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="data">Everything Is Perfect </h1> -->
+    <h1>Welcome to jquery</h1>
+    <h1>Welcome to jquery</h1>
+    <h1>Welcome to jquery</h1>
+    <h1>Welcome to jquery</h1>
+
+    <p class="data">avcoe</p>
+    <p id="p1">avcoe</p>
+    <p>avcoe</p>
+    <p class="data">avcoe</p>
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+    <script>
+       
+        $(document).ready(function(){
+
+        
+            //Tag selector
+
+            $("h1").css("color","red");
+            $('h1:first').css("color","blue");
+            $('h1:last').css("color","blue");
+            $('h1').click(function(){
+                $('h1').css('color','purple');
+            });
+        });
+
+        //class selector
+        $(document).ready(function(){
+            $('.data').css('color','pink');
+        });
+
+        // id selector
+        $(document).ready(function(){
+            $('#p1').css('color','yellow');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Progress Bar</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.header{
+			position: sticky;
+			background-color:black;
+			color:white;
+			height: 10vh;
+			padding-left: 2vw;
+			top: 0;
+			z-index: 1;
+		}
+		li{
+			display: inline-block;
+			padding: 2vw;
+		}
+		.main{
+			background-color: aqua;
+			height: 100vh;
+
+		}
+		.progress{
+			animation: progress;
+			animation-duration:2s;
+			animation-direction:normal;
+			animation-iteration-count: 1;
+			background-color: darkred;
+			height:0.5vh;
+		}
+		.traniPB{
+			width: 100vw;
+			/*transition-property: width;
+			transition-duration: 2s;
+			transition-timing-function:1;*/
+			background-color: darkred;
+			height:0.5vh;
+
+		}
+		
+		@keyframes progress{
+			from{
+				width: 0vw;
+			}
+			to{
+				width: 70vw;
+			}
+			to{
+				width: 100vw;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="progress">	
+	</div>
+	<header class="header">
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+	 </header>
+	 <div class="traniPB">
+	 </div>
+	 <main class="main"> 	
+	 </main>
+</body>
+</html>

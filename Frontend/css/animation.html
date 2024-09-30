@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition property</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.container
+		{
+			background-color:lightblue;
+			color: whitesmoke;
+			height: 50vh;
+		}
+		.img1{
+			padding: 40px;
+			width: 300px;
+			animation: shub;
+			animation-duration:2s;
+			animation-direction:alternate;
+			animation-iteration-count: infinite;
+
+		}
+		/*@keyframes shub{
+			from{
+				width:300px;
+			}
+			to{
+				width:100px;
+			}
+		}*/
+		@keyframes shub{
+			0%{
+				width: 50px;
+			}
+			50%{
+				width: 100px;
+			}
+			100%{
+				width: 200px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="heart.png" class="img1">
+	</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <style>
+        .container{
+            margin-top: 30px;
+            width: 100%;
+            height: 80%;
+            border: 5px;
+            border-color:blue;
+        }
+        .box{
+            width: 90px;
+            height: 10px;
+            background-color:purple;
+         }
+
+    </style>
+    <div class="buttons">
+    <button onclick="Left1()">Right</button>
+    <button onclick="Right1()">Left</button>
+    <button onclick="Top1()">Bottom</button>
+    <button onclick="Bottom1()">Top</button>
+    </div>
+    <br> <br>
+    <div class="container">
+        <div class="box"></div><br>
+    </div>
+    
+
+    <script>
+        var l="";
+        var r="";
+        var t="";
+        var b="";
+        var a=0;
+        var b=0;
+        function Left1(){
+           l= setInterval(left,500);
+        }
+        function Right1(){
+           r= setInterval(right,500);
+        }
+        function Top1(){
+            t=setInterval(top1,500);
+        }
+        function Bottom1(){
+           b= setInterval(bottom1,500);
+        }
+
+        function left(){
+          //  clearInterval(l);
+            clearInterval(r);
+            clearInterval(t);
+            clearInterval(b);
+
+            a+=30;
+            document.getElementsByClassName('box')[0].style.marginLeft=a+"px";
+        }
+        function right(){
+          //  clearInterval(l);
+            clearInterval(l);
+            clearInterval(t);
+            clearInterval(b);
+            a-=30;
+            document.getElementsByClassName('box')[0].style.marginLeft=a+"px";
+        }
+        function top1(){
+           clearInterval(l);
+            clearInterval(r);
+           // clearInterval(l);
+            clearInterval(b);
+
+            a+=30;
+            b+=50;
+            document.getElementsByClassName('box')[0].style.marginTop=b+"px";
+        }
+        function bottom1(){
+           clearInterval(l);
+            clearInterval(r);
+            clearInterval(l);
+           // clearInterval(b);
+
+            a+=30;
+            b-=50;
+            document.getElementsByClassName('box')[0].style.marginTop=b+"px";
+         }
+    </script>
+</body>
+</html>

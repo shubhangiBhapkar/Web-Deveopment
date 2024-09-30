@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Css method </title>
+</head>
+<body id="body">
+    <div class="box"></div>
+    <div class="box1"></div>
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+   <script>
+    $(document).ready(function(){
+        $('.box').css('height','400px');
+        $('.box').css('width','400px');
+        $('.box').css('background','orange');
+
+        $('.box1').css({'height':'400px','width':'400px','background':'purple'});
+        $('#body').css('display','flex');
+    });
+   </script>
+
+</body>
+</html>

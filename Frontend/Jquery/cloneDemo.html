@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>copy Current Address to Permenant</title>
+</head>
+<body>
+    <div class="div1">
+        <label >Current Address</label>
+        <input type="text"  placeholder="Current Address" id="cAd">
+    </div>
+   <br>
+    <div class="div2">
+        <label >Permenant  Address</label>
+    </div>
+   
+    <button id="copy">same</button>
+
+    
+<script src="cdn/jquery-3.7.1.js">    
+</script>
+<script src="cdn/jquery-3.7.1.min.js">
+</script>
+<script src="cdn/jquery-3.7.1.slim.js">
+</script>
+<script src="cdn/jquery-3.7.1.slim.min.js">
+</script>
+   
+<script>
+     $(document).ready(function(){
+        $('#copy').click(function(){
+            $('.div1 input').clone().appendTo('.div2');
+        })
+    })
+</script>
+</body>
+</html>

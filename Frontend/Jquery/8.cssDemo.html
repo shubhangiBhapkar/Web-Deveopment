@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo</title>
+</head>
+<body>
+    <img src="../Demo/cycle.png" id="img"/>
+    <input type="button" value="radius" id="Radius"/>
+    <input type="button" value="border" id="Border"/>
+    <input type="button" value="shadow" id="Shadow"/>
+
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+  
+  <script>
+    $(document).ready(function(){
+        $('#Radius').click(function(){
+            $('#img').css('height','200px');
+        });
+
+        $('#Border').click(function(){
+            $('#img').css('border','solid red 2px');
+        });
+
+        $('#Shadow').click(function(){
+            $('#img').css('box-shadow','10px 10px 10px 10px');
+        });
+        
+    });
+  </script>
+</body>
+</html>

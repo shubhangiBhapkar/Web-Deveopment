@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>onfocus</title>
+</head>
+
+<body>
+    <form onsubmit="return Fill()" action="save.html" >
+        <input type="text" name="" id="name" onfocus="onfocus1('name')" onblur="onblur1('name')"
+            onselect="onselect1('name')" placeholder="name"><br><br>
+        <input type="text" email="" id="email" onfocus="onfocus1('email')" onblur="onblur1('email')"
+            onselect="onselect1('email')" placeholder="email"><br><br>
+        <input type="text" phone="" id="phone" onfocus="onfocus1('phone')" onblur="onblur1('phone')"
+            onselect="onselect1('phone')" placeholder="phone">
+        <br><br><br>
+        <select onchange="change(this.value)" id="sele">
+            <option>Branch</option>
+            <option>IT</option>
+            <option>CS</option>
+            <option>ENTC</option>
+        </select>
+
+        <br><br>
+        <button type="submit">submit</button>
+
+    </form>
+    <script>
+
+        function onfocus1(att) {
+            document.getElementById(att).style.background = "pink";
+        }
+
+        function onblur1(att) {
+            document.getElementById(att).style.background = "white";
+        }
+
+        function onselect1(att) {
+            document.getElementById(att).style.background = "blue";
+        }
+
+        function change() {
+            document.getElementById('sele').style.background = "red";
+        }
+        function Fill() {
+            var name = document.getElementById('name');
+            var email = document.getElementById('email');
+            var phone = document.getElementById('phone');  
+            if (name.value.trim()=="" || email.value.trim()== "" || phone.value.trim() ==" ") {
+                alert("Fill all data");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

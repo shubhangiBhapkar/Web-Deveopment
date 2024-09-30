@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dom</title>
+</head>
+<body>
+    <h1 id="1">Welcome</h1>
+    <h2 id="2">JS</h2>
+    <br><br>
+
+    <h2 class="data">Html</h2>
+    <h2 class="data1">JS</h2>
+    <h2 class="data">css</h2>
+    <h2 class="data">jquery</h2>
+
+    <ul >
+        <li class="list">HTML</li>
+        <li class="list">CSS</li>
+        <li class="list">JS</li>
+        <li class="list">CPP</li>
+        <li class="list">PHP</li>
+        <li class="list">HTML</li>
+        <li class="list">CSS</li>
+        <li class="list">JS</li>
+        <li class="list">CPP</li>
+        <li class="list"
+        >PHP</li>
+    </ul>
+
+    <script>
+       var z= document.head;
+       console.log(z);
+       var a= document.getElementById("1").innerText;
+       console.log(a);
+       var b= document.getElementById("2").innerText;
+       console.log(b);
+
+       document.getElementById("1").innerText=b;
+       document.getElementById("2").innerText=a;
+
+       //get
+      var a= document.getElementsByClassName('data');
+      var b=document.getElementsByClassName('data1');
+      console.log(a);
+      console.log(b);
+      
+      //set
+      document.getElementsByClassName('data')[0].innerText="Welcome HTML";
+      
+      document.getElementsByClassName('data')[1].innerText="Welcome css";
+      
+      document.getElementsByClassName('data')[2].innerText="Welcome jquery";
+      
+      document.getElementsByClassName('data1')[0].innerText="Welcome js";
+
+      var l=document.getElementsByClassName('list');
+      console.log(l.length);
+      for(var i=0;i<=l.length;i++){
+        document.getElementsByClassName(i).innerHTML;
+      }
+    </script>
+</body>
+</html>

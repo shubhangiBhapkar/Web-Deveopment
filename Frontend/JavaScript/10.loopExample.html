@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <table border="1" width="100%">
+        <script>
+           
+          var i=1;  //2            
+          while(i<=10)
+          {
+            document.write("<tr>"); 
+            var j=1;   
+                     
+            while(j<=30)//2
+            {
+              document.write("<td>"); 
+               
+              document.write(i*j);
+              // document.write("<br>");
+              j++;
+                
+            }
+            document.write("</td"); 
+            document.write("<br>");
+            i++;            
+          }     
+           document.write("</tr"); 
+       </script>
+      </table>  
+
+      <table border="1" width="100%">
+      <script>
+   
+        var a=1;
+        document.write("<tr>");
+        while(a<=10){
+          var b=0;
+          while(b<91){
+            var c=a+b;
+            document.write("<td>");
+            document.write(c+"<br>");
+            document.write("</td>");
+            b+=10;
+          }
+         
+          a++;
+          document.write("</tr>");
+        }
+       </script>
+       </table>
+    
+</body>
+</html>

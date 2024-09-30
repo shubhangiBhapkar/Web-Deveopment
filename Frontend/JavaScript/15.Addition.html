@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Addition Module </title>
+</head>
+<body>
+    <input type="number" id="no1" placeholder="Num1"><br><br>
+    <input type="number" id="no2" placeholder="Num2"><br><br>
+    <button onclick="add(no1.value,no2.value)" >+</button>
+    <button onclick="sub(no1.value,no2.value)">-</button>
+    <button onclick="mul(no1.value,no2.value)">*</button><br><br>
+    <input type="number" id="tot" placeholder="Total">
+    
+    <script>
+    //    function add(){
+    //     var no1=document.getElementById("no1").value;
+    //     var no2=document.getElementById("no2").value;
+    //     var tot=Number(no1)+Number(no2);
+    //     document.getElementById("tot").value=tot;
+    //    }
+
+    function add(a,b){
+        var tot=Number(a)+Number(b);
+        document.getElementById("tot").value=tot;
+
+    }
+
+    function sub(a,b){
+        var tot=Number(a)-Number(b);
+        document.getElementById("tot").value=tot;
+
+    }
+
+    
+    function mul(a,b){
+        var tot=Number(a)*Number(b);
+        document.getElementById("tot").value=tot;
+
+    }
+    </script>
+        
+</body>
+</html>

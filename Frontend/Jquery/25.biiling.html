@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Billing system</title>
+</head>
+
+<body>
+    <script src="cdn/jquery-3.7.1.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+
+    <input type="text" id="pro_name" placeholder="product name">
+    <input type="text" id="pro_rate" placeholder="product rate">
+    <input type="text" id="pro_qty" placeholder="product quantity">
+    <input type="text" id="pro_tot" placeholder="product total">
+    <button id="add">Add</button>
+
+    <table id="tb1" border="1" style="margin-top: 50px;margin-left: 100px;">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Rate</th>
+                <th>Product Quantity</th>
+                <th>Product Total</th>
+            </tr>
+       </thead>
+       <tbody id="tdata">
+            
+       </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function(){
+            $('#pro_name,#pro_rate,#pro_qty,#pro_tot').keyup(function(){
+              var rate=  $('#pro_rate').val();
+              var qty=  $('#pro_qty').val();
+              var tot=Number(rate*qty);
+              $('#pro_tot').val(tot);
+            })
+
+            $('#add').click(function(){
+                var name=  $('#pro_name').val();
+                var rate=  $('#pro_rate').val();  
+                var qty=  $('#pro_qty').val();
+                var tot=  $('#pro_tot').val();  
+
+                if(name!=""&&rate!=""&&qty!=""&&tot!=""){
+                    var a="<tr><td>"+name+"</td><td>"+rate+"</td><td>"+qty+"</td><td>"+tot+"</td></tr>";
+
+                    $('#tdata').append(a);
+                }
+            })
+
+        })
+
+        
+    </script>
+</body>
+
+</html>

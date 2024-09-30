@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>History object</title>
+    </head>
+        <body>
+            <button onclick='back1()'>Back</button>
+            <button onclick='next1()'>Next</button>
+            <button onclick='back2()'>Back2</button>
+            <button onclick='next2()'>Next2</button>
+
+            <script>
+                function back1(){
+                     history.back();
+                }
+                function next1(){
+                    history.forward();
+                }
+                function back2(){
+                    history.go(-2);
+                }
+                function next2(){
+                    history.go(2);
+                }
+                console.log(history);
+            </script>
+        </body>
+    
+</html>

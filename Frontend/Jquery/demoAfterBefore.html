@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>add frame to box</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+           background-color:red;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+           background-color:red;
+        }
+    </style>
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, veritatis pariatur provident perspiciatis officia quia hic praesentium soluta atque iusto quibusdam consequatur esse necessitatibus rerum, enim dicta eum architecto voluptates?
+    </div>
+    <div class="box2" id="div2">
+
+    </div>
+    <button id="aft">after</button>
+
+    
+
+<script>
+    $(document).ready(function(){
+        $('#aft').click(function(){
+            
+            $('.box').after($('#div2'));
+        })
+        
+    })
+</script>
+</body>
+</html>

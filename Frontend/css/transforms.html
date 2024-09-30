@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Transform	</title>
+	<style type="text/css">
+		.container{
+			background-color: dimgray;
+			height: 455px;
+		}
+		/*.img1{
+			border: 2px solid darkred;
+			transform: translate(50px ,60px) rotate(45deg) scalex(1) scaleY(1) skew(10deg);
+          transform: matrix(1, 1, 1, 1, 2, 2);
+
+		}*/
+		.img1{
+			width: 200px;
+			padding: 10px;
+			transition-property: width;
+			
+			transition-duration:5s ;
+			transition-timing-function:ease-in;
+		}
+		.img1:hover{
+			width: 50px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="tele.jpg" class="img1">
+	</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add pink</title>
+</head>
+<body>
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+    <style>
+        .red{
+            height: 200px;
+            width: 200px;
+            background-color:red;
+        }
+        .pink{
+            height: 200px;
+            width: 200px;
+            background-color:pink;
+        }
+
+    </style>
+    <div class="red" id="box"></div>
+    <br><br>
+    <input type="button" value=" Add pink" id="Add"/>
+    <input type="button" value="remove pink" id="Remove"/>
+    <input type="button" value="Toggle" id="Toggle"/>
+
+    <script>
+
+        $(document).ready(function(){
+            $('#Add').click(function(){
+                $('#box').addClass('pink');
+            });
+
+            $('#Remove').click(function(){
+                $('#box').removeClass('pink');
+            });
+
+            $('#Toggle').click(function(){
+                $('#box').toggleClass('pink');
+            });
+        });
+
+
+
+        // $(document).ready(function(){
+        //     $('#Add').click(function(){
+        //         $('.red').attr('class','pink');
+        //     });
+
+        //      $('#Remove').click(function(){
+        //          $('.pink').attr('class','red');
+        //      });
+
+        // });
+    </script>
+</body>
+</html>

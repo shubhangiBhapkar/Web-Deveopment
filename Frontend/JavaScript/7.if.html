@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shopping</title>
+    <h1>
+        Example
+    </h1>
+</head>
+
+<body>
+    <script>
+        var total = 5000;
+        var dis = 0;
+        if (total >= 5000) {
+            document.write("Congratulations, You got discount!!!");
+            dis = 10;
+        }
+        var disc = total * dis / 100;
+        var nettot = total - disc;
+        document.write('Total discount is ' + disc);
+        document.write('Total bill is ' + nettot);
+
+        document.getElementsByTagName('h1')[0].style = "color:red";
+
+        // var gender = "female";
+        // if (gender === "feamale") {
+        //     document.write("<br>");
+        //     document.write("person is female");
+
+        // }
+        // if (gender === "male") {
+        //     document.write("<br>");
+        //     document.write("person is male");
+
+        // }
+
+        var gender = "female";
+
+        if (gender =="female") {
+            console.log("The person is female.");
+        } else {
+            console.log("The person is male.");
+        }
+
+        var age=20;
+        if(age>=18){
+            console.log("u can vote");
+        }
+        else{
+            console.log("u cant vote");
+        }
+
+        no=23;
+        if(no%2==0){
+            console.log("even");
+
+        }
+        else{
+            console.log("odd");
+        }
+
+        no1=10;
+        no2=43;
+        if(no1>no2){
+            console.log("10 is greater 43");
+        }
+        else{
+            console.log("43 is greater 10");
+        }
+
+        // tot=600;
+        // disc=0;
+        // if(tot>=5000)
+        // {
+        //     disc=10;
+        //     console.log("you got discount :"+disc+"%");
+        //     disc=tot*10/100;
+        //     Bill=tot-disc;
+        //     console.log("your bill is: "+Bill);
+        // }
+        // else{
+        //     console.log("ur not applicable for any discount");
+        //     console.log("your bill is: "+tot);
+        // }
+
+        // elseif
+        // var n1=100,n2=78,n3=256;
+        // if(n1>=n2&&n1>=n3){
+        //     console.log(n1+" is greater than "+n2,n3);
+        // }else if(n2>=n1&&n2>=n3){
+        //     console.log(n2+ " is greater than "+n1,n3);        
+        // }else{
+        //     console.log(n3+ " is greater");        
+        // }
+
+        shop=20000;
+        disc=0;
+        if(shop<=5000){
+            console.log("There is no discount ");
+            console.log("ur bill is "+shop);
+        }
+        else if(shop>5000 && shop<=10000){
+        
+            disc=10;
+            console.log("discount is "+10+"%");
+            disc=shop*10/100;
+            Bill=shop-disc;
+            console.log("Bill is "+Bill);
+        }
+        
+    else if(shop>10000 ){
+        
+        disc=20;
+        console.log("discount is "+disc+"%");
+        disc=shop*20/100;
+        Bill=shop-disc;
+        console.log("Bill is "+Bill);
+    }
+
+    </script>
+
+</body>
+
+</html>

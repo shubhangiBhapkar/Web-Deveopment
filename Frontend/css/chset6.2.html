@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigation bar using flex</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.container{
+			display: flex;
+			justify-content: space-between;
+		}
+		.header{
+			background-color: black;
+			color: white;
+			height: 17vh;
+			font-size:2vw;
+
+		}
+		li{
+			display: inline-block;
+			padding: 3vw 0vw 0vw 10vw;
+
+		}
+		.left{
+			background-color: palevioletred;
+			color: whitesmoke;
+			height: 90vh;
+			width: 40vw;
+		}
+		.right{
+			background-color: palegoldenrod;
+			color: whitesmoke;
+			height: 90vh;
+			width: 40vw;
+
+		}
+		.logo{
+			align-self:justify-content: space-between;;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+			<li>contact</li>
+		</ul>
+	</header>
+	<div class="container">
+		<div class="right">
+			I am present at right side.
+		</div>
+		<div class="left">
+			I am present at wleft side.
+		</div>
+
+		<div class="logo">
+			<img src="admin.jpg">
+		</div>
+	</div>
+
+</body>
+</html>

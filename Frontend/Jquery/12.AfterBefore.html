@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>After Bafore</title>
+</head>
+<body>
+    <div id="div1">
+        <p>Welcome Shubhangi!!</p>
+    </div>
+    
+
+    <button id="aft" >After</button>
+    <button id="bef" >Before</button>
+
+   
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+
+<script>
+    $(document).ready(function(){
+        $('#aft').click(function(){
+            $('#div1').after("<h1>welcome</h1>");
+        })
+
+        $('#bef').click(function(){
+            $('#div1').before("<h1>welcome</h1>");
+        })
+    })
+    
+</script>
+</body>
+</html>

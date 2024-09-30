@@ -1,0 +1,35 @@
+*{
+	padding: 0;
+	margin: 0;
+
+}
+.box{
+	width: 200px;
+	height: 200px;
+	background-color: lightseagreen;
+	position: absolute;
+	animation-name: move;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes move{
+	0%{
+		left: 0;
+		background-color: lightseagreen;
+		top: 0;
+
+	}
+	50%{
+		left:80%;
+		background-color: lightgreen;
+		top: 0;
+	}
+	
+	100%{
+		left:80%;
+		background-color: salmon;
+		top:50%;
+	}
+	
+}

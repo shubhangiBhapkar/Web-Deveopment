@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert message</title>
+</head>
+
+<body>
+    <!-- Inline Js -->
+    <p onclick="alert('click')" ondblclick="alert('double click')">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, labore!
+    </p>
+    
+    <!-- internal js -->
+    <h2 id="p1">
+        Welcome to javascript
+    </h2>
+    <script type="text/javascript">
+        document.getElementById('p1').style.color = "orange";
+    </script>
+    <!-- external js -->
+    <h2 id="p2">
+        js from outside file
+    </h2>
+    <script type="text/javascript" src="exe.js"></script>
+</body>
+
+</html>

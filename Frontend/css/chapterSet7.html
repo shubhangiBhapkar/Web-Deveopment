@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Layout using grid layout</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.header{
+			background-color: black;
+			color: white;
+			padding-top: 25px;
+			padding-left: 70px;
+			height: 10vh;
+			
+/*			grid-template-columns: 150px 150px 150px ;*/
+			
+			font-size: 1.7vw;
+		}
+		.container{
+			background-color: lightgreen;
+			display: inline-grid;
+			height: 90vh;
+			grid-column-gap: 20vw;
+			grid-template-columns: 40vw 40vw ;
+		}
+		li{
+			display:inline-grid;
+			list-style: none;
+			padding-top:1.3vw;
+			padding-left:10vw;
+
+		}
+		.item{
+			background-color: lightpink;
+		}
+		@media screen and (max-width:1000px){
+			.container{
+				background-color:darkred ;
+			}
+		}
+		@media screen and (max-width:500px){
+			.container{
+				background-color:yellow ;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<header class="header">
+		<ul>
+			<li>Home</li>
+			<li>about</li>
+			<li>contact</li>
+		</ul>
+		
+	</header>
+	<div class="container">
+		<div class="item">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.
+		</div>
+		<div class="item">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+		</div>
+	</div>
+
+</body>
+</html>

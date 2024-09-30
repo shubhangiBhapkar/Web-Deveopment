@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Variable</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <h1 id="h2"></h1>
+    <h1 id="h3"></h1>
+    <script>
+        var a="Tony";
+        var A="Stark";
+        document.getElementById('h1').innerHTML=a;
+        document.getElementById('h2').innerHTML=A;
+      
+        // example
+        var a=10;
+        var b=20;
+        var c=30;
+        var sum=a+b+c;
+        alert(sum);
+        document.write(sum);
+        console.log(sum);
+        document.getElementById('h3').innerHTML=sum;
+        
+
+
+        // HOMEWORK SWAP A AND B
+
+        var a=10;
+        var b=20;
+        var c;
+        document.write("before swapping");
+        document.write(a);
+        document.write(b);
+        c=a;
+        a=b;
+        b=c;
+        document.write(a,b);
+
+        // Variable Scope
+
+        // var a=123;
+        // if(true)
+        // {
+        //     var b=20;
+        // }
+        // document.write(a);
+        // document.write("\n");
+        // document.write(b);
+
+        // var z="global";
+        // if(1){
+        //     let x="local";
+        // }
+        // document.write(z);
+        // document.write(x);  
+
+        const pi=3.14;
+        document.write(pi);
+        pi=3.141;
+        document.write(pi);
+
+        
+
+    </script>
+    
+</body>
+</html>

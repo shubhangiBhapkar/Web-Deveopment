@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div class="div1">
+        <h1>welcome</h1>
+    </div>
+    <div class="div2">
+      
+    </div>
+    <button id="clone">Clone</button>
+
+    <script src="cdn/jquery-3.7.1.js">    
+    </script>
+    <script src="cdn/jquery-3.7.1.min.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.js">
+    </script>
+    <script src="cdn/jquery-3.7.1.slim.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#clone').click(function(){
+                $('.div1 h1').clone().appendTo('.div2');
+            })
+           
+        });
+    </script>
+</body>
+</html>

@@ -26,22 +26,22 @@ const customerSchema = new Schema({
 const Order = mongoose.model("Order", orderSchema); // Corrected schema reference
 const Customer = mongoose.model("Customer", customerSchema); // Corrected schema reference
 
-let addCustomer = async () => {
-  let cust1 = new Customer({
-    name: "Shubhangi",
-  });
+// let addCustomer = async () => {
+//   let cust1 = new Customer({
+//     name: "Shubhangi",
+//   });
 
-  // Correcting async issue and typo in findOne
-  let order1 = await Order.findOne({ item: "poha" });
-  let order2 = await Order.findOne({ item: "vadapav" });
+//   // Correcting async issue and typo in findOne
+//   let order1 = await Order.findOne({ item: "poha" });
+//   let order2 = await Order.findOne({ item: "vadapav" });
 
-  // Pushing orders to the customer's order array
-  cust1.orders.push(order1);
-  cust1.orders.push(order2);
+//   // Pushing orders to the customer's order array
+//   cust1.orders.push(order1);
+//   cust1.orders.push(order2);
 
-  let result = await cust1.save();
-  console.log(result);
-};
+//   let result = await cust1.save();
+//   console.log(result);
+// };
 
 // Uncomment the following if you need to add sample orders
 // const addOrders = async () => {
@@ -54,4 +54,30 @@ let addCustomer = async () => {
 // };
 // addOrders();
 
-addCustomer();
+// addCustomer();
+
+//Function
+
+const addCust=async()=>{
+  let newCust  =new Customer({
+    name:"shubham"
+  });
+
+  let newOrder=new Order({
+    item:"pizza",
+    price:120
+  });
+
+  newCust.orders.push(newOrder);
+  await newOrder.save();
+  await newCust.save();
+  console.log("Added new customer!");
+}
+
+const delCust=async()=>{
+  let data=await Customer.findByIdAndDelete("67029ecaba78fc855dfff3f7");
+  console.log(data);
+}
+
+delCust();
+// addCust();

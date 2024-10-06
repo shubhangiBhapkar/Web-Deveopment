@@ -1,0 +1,57 @@
+const mongoose = require("mongoose");
+const { Schema } = mongoose;
+
+async function main() {
+  await mongoose.connect("mongodb://127.0.0.1:27017/relationDemo");
+  console.log("Connection successful!");
+}
+
+main().catch(err => console.log(err));
+
+const orderSchema = new Schema({
+  item: String,
+  price: Number
+});
+
+const customerSchema = new Schema({
+  name: String,
+  orders: [
+    {
+      type:Schema.Types.ObjectId,
+      ref:"Order"
+    },
+  ],
+});
+
+const Order = mongoose.model("Order", orderSchema); // Corrected schema reference
+const Customer = mongoose.model("Customer", customerSchema); // Corrected schema reference
+
+let addCustomer = async () => {
+  let cust1 = new Customer({
+    name: "Shubhangi",
+  });
+
+  // Correcting async issue and typo in findOne
+  let order1 = await Order.findOne({ item: "poha" });
+  let order2 = await Order.findOne({ item: "vadapav" });
+
+  // Pushing orders to the customer's order array
+  cust1.orders.push(order1);
+  cust1.orders.push(order2);
+
+  let result = await cust1.save();
+  console.log(result);
+};
+
+// Uncomment the following if you need to add sample orders
+// const addOrders = async () => {
+//   let res = await Order.insertMany([
+//     { item: "samosa", price: 20 },
+//     { item: "poha", price: 15 },
+//     { item: "vadapav", price: 18 }
+//   ]);
+//   console.log(res);
+// };
+// addOrders();
+
+addCustomer();

@@ -1,0 +1,15 @@
+.heading{
+    color: red;
+    font-weight: 400;
+}
+div{
+    background-color: pink;
+}
+.show-post{
+    background-color: pink;
+    border: 1px solid black;
+    width: 500px;
+    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

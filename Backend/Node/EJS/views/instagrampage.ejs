@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        button {
+            background-color: #3db0bf;
+            font-weight: bold;
+            height: 30px;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+        }
+        .list-1 {
+            display: flex;
+            flex-direction: row;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+            margin-top: 10px;
+        
+            
+        }
+        .list-1 p{
+            margin-left: 20px;
+        }
+        .div-1{
+            display: flex;
+            flex-direction: row;
+        }
+        #post-img{
+            width: 200px;
+            height: 200px;
+            border-radius: 0px;
+        }
+        .post-section{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <%=data.name %>^
+    </h1>
+    <div class="div-1">
+        <div class="img-profile">
+            <img src="https://plus.unsplash.com/premium_photo-1677545182067-26ac518ef64f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" ">
+        </div>
+
+        <div class="list-1">
+            <p>  <%= data.post %><br> Post</p>
+            <p>   <%= data.followers %><br>Followers</p>
+            <p>  <%= data.following %><br>Followings</p>
+        </div>
+    </div>
+    <div class="bio">
+        <p>
+            <h1 style="font-weight: normal; font-size: medium; padding-left: 15px;"><%= data.name%><br>*******</h1>
+        </p>
+    </div>
+    <button>Follow</button>
+    <button>Message</button>
+    <biv><hr><div>
+   <div class="post-section">
+   
+       <% for(let post of data.posts ){%>
+            <img id="post-img" src="<%=post.image%>" alt="some img"/>
+            <p>
+                Likes: <%=post.likes %>&nbsp;&nbsp; Comments:<%= post.comments%>
+            </p>
+      <% }%>
+    </div>
+   </div>
+   
+    
+</body>
+</html>

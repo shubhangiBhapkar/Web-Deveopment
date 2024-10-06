@@ -1,0 +1,20 @@
+
+.chatbox{
+    background: rgb(158, 204, 245);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+.msgbox{
+    background-color: #979eda;
+    border-radius: 5px;   
+}
+button{
+    margin: 20px;
+    background-color: green;
+    border-radius: 3px;
+
+}

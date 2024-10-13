@@ -20,6 +20,12 @@ app.use(session(sessionOptions));
 app.get("/register",(req,res)=>{
     let {name="anonymous"}=req.query;
     req.session.name=name;
+
+    if(name==="anonymous"){
+        req.flash("error","Not registered!");
+    }else{
+        req.flash("success","You register successfully!");
+    }
     console.log(name);
     res.redirect("/hello");
     // res.send(req.session.name);
@@ -27,7 +33,10 @@ app.get("/register",(req,res)=>{
 
 app.get("/hello",(req,res)=>{
     // res.send(`Hello,${req.session.name}`);
-    res.render("page.ejs",{name:req.session.name,msg:req.flash("success")});
+    // first after name we pass msg like msg:req.flash("success"), but now using res.locals not need to pass
+    res.locals.errormsg=req.flash("error");
+    res.locals.successmsg=req.flash("success");
+    res.render("page.ejs",{name:req.session.name});
 });
 
 
